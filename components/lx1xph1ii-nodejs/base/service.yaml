@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: lx1xph1ii-nodejs
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: lx1xph1ii-nodejs 
+  name: lx1xph1ii-nodejs
+spec:
+  ports:
+  - port: 3001 
+    targetPort: 3001 
+  selector:
+    app.kubernetes.io/instance: lx1xph1ii-nodejs 
